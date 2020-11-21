@@ -1,1 +1,3 @@
 # Hiking-DDS238-2-WIFI-Din-Rail-Energy-Meter-flashing-Tasmota
+
+How to flash this https://www.aliexpress.com/item/4000571797301.html?spm=a2g0s.9042311.0.0.e28e4c4dyHuWME with Tasmota...
