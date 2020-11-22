@@ -10,15 +10,13 @@ First try was with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert
 More pictures from the inside:
 <p align="center"> <img src="pictures/sideview.jpg" width="400" > <img src="pictures/open_side.jpg" width="400" ></p>
 <p align="center"> <img src="pictures/open_front.jpg" width="400" > <img src="pictures/open_side2.jpg" width="400" > </p>
-<p align="center"> <img src="pictures/displayboard_back_without_espboard.jpg" width="400" ></p>
+<p align="center"> <img src="pictures/mainboard_front.jpg" width="400" ></p>
+<p align="center"> <img src="pictures/displayboard_front.jpg" width="400" > <img src="pictures/displayboard_side2.jpg" width="400" ></p>
 <p align="center"> <img src="pictures/displayboard_back_with_espboard.jpg" width="400" ></p>
+<p align="center"> <img src="pictures/displayboard_back_without_espboard.jpg" width="400" ></p>
 <p align="center"> <img src="pictures/displayboard_back_with_espboard_side_after.jpg" width="400" ></p>
 <p align="center"> <img src="pictures/displayboard_back_with_espboard_side_before.jpg" width="400" ></p>
-<p align="center"> <img src="pictures/displayboard_front.jpg" width="400" ></p>
-<p align="center"> <img src="pictures/displayboard_side2.jpg" width="400" ></p>
-<p align="center"> <img src="pictures/espboard_back.jpg" width="400" ></p>
-<p align="center"> <img src="pictures/espboard_front.jpg" width="400" ></p>
-<p align="center"> <img src="pictures/mainboard_front.jpg" width="400" ></p>
+<p align="center"> <img src="pictures/espboard_back.jpg" width="400" > <img src="pictures/espboard_front.jpg" width="400" ></p>
 
 
 
