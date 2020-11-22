@@ -13,9 +13,9 @@ Tasmota Config for TuyaMCU:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; SetOption66 1; SetOption53 1;
 ```
-Rule???
+Rule to update Data on boot
 ```console
-Backlog Rule1 1; Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog SerialSend5 55aa0001000000; RuleTimer1 5 endon
+Backlog Rule1 1; Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
 ```
 More pictures from the inside:
 <p align="center"> <img src="pictures/sideview.jpg" width="400" > <img src="pictures/open_side.jpg" width="400" ></p>
