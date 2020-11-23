@@ -18,9 +18,9 @@ Rule to update Data on boot
 Backlog Rule1 1; Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
 Backlog Rule2 1; Rule2 on Time#Minute do backlog TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; endon
 ```
-Rule to request new Data every 10 seconds
+Rule to request new Data every 9 seconds
 ```console
-Backlog Rule2 1; Rule2 on Time#Minute do backlog TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; endon
+Backlog Rule2 1; Rule2 on Time#Minute do backlog TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; endon
 ```
 More pictures from the inside:
 <p align="center"> <img src="pictures/sideview.jpg" width="400" > <img src="pictures/open_side.jpg" width="400" ></p>
