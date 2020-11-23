@@ -15,8 +15,7 @@ Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; SetOption66 1; SetOption53 
 ```
 Rule to update Data on boot
 ```console
-Backlog Rule1 1; Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
-Backlog Rule2 1; Rule2 on Time#Minute do backlog TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; Delay 100; TuyaSend8; endon
+Backlog Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon; Rule1 1;
 ```
 Rule to request new Data every 9 seconds
 ```console
