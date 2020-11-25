@@ -13,13 +13,13 @@ Tasmota Config for TuyaMCU:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; SetOption66 1; SetOption53 1;
 ```
-Rule to update Data on boot
+Rule to update Data on boot and every 5 seconds afterwards...
 ```console
-Backlog Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon; Rule1 1;
+Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
 ```
-Rule to request new Data every 9 seconds
+Activate Rule1
 ```console
-Backlog Rule2 1; Rule2 on Time#Minute do backlog TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; Delay 90; TuyaSend8; endon
+Rule1 1;
 ```
 More pictures from the inside:
 <p align="center"> <img src="pictures/sideview.jpg" width="400" > <img src="pictures/open_side.jpg" width="400" ></p>
