@@ -11,7 +11,11 @@ Tasmota Version > 9.1 Template
 ```
 Tasmota Config for TuyaMCU:
 ```console
-Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; SetOption66 1; SetOption53 1;
+Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19;
+```
+Tasmota Config : Publishing TuyaReceived to MQTT; Show Voltage with 1 Decimal
+```console
+Backlog SetOption66 1; VoltRes 1;
 ```
 Rule to update Data on boot and every 5 seconds afterwards...
 ```console
