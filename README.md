@@ -6,10 +6,10 @@ How to flash the [Hiking DDS238-2 WIFI Din Rail Energy Meter](https://www.aliexp
 First try was with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert) but this did not work (seems to be newer Firmware) i had to open the device, with the 2 screws on the backside, after that you can remove the cover and access the lcd-board and on the backside of the LCD-board you will find the TYWE3S Board (aka ESP8266EX)
 <p align="center"> <img src="pictures/open_front.jpg" width="300" > <img src="pictures/open_side2.jpg" width="300" > </p>
 
-Picture of the TYWE3S Board:
-<p align="center"> <img src="pictures/displayboard_back_with_espboard.jpg" width="300" ></p>
+Picture of the TYWE3S Board on the left side, Board with the MCU on the right side:
+<p align="center"> <img src="pictures/displayboard_back_with_espboard.jpg" width="300" > <img src="pictures/displayboard_back_without_espboard.jpg" width="300" ></p>
 because the RX/TX of the ESP8266 is connected to the MCU under it, i had to desolder the ESP-Board to be able to flash it, the needed Pins can be found [here] (https://tasmota.github.io/docs/devices/TYWE3S/)
-<p align="center"> <img src="pictures/displayboard_back_without_espboard.jpg" width="300" ></p>
+
 
 after desoldering the ESP-Board, the flashing was easy, soldering together was not so easy, because the ESP-Board does have smaller holes (standard 2.54 are to big)
 my board after putting it together:
