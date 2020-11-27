@@ -14,12 +14,13 @@ after desoldering the ESP-Board, the flashing was easy, soldering together was n
 my board after putting it together:
 <p align="center"> <img src="pictures/displayboard_back_with_espboard_side_after.jpg" width="300" ></p>
 
+After flashing via USB-to-Serial adapter, only the software part is left to do. After basic Wifi Setup of Tasmota apply this Template:
 
 Tasmota Version > 9.1 Template
 ```console
 {"NAME":"Hiking DDS238-2 WIFI","GPIO":[0,2272,0,2304,0,0,0,0,0,0,320,0,32,0],"FLAG":0,"BASE":54}
 ```
-Tasmota Config for TuyaMCU:
+Tasmota Config for TuyaMCU to paste into Console:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19;
 ```
@@ -45,8 +46,4 @@ More pictures from the inside:
 
 <p align="center"> <img src="pictures/displayboard_back_with_espboard_side_before.jpg" width="300" ></p>
 <p align="center"> <img src="pictures/espboard_back.jpg" width="300" > <img src="pictures/espboard_front.jpg" width="300" ></p>
-
-
-
-to be able to flash the TYWE3S (an ESP8266EX) i had to disconnect it from the metering chip because otherwise it would not respond on the TX/RX Interface...
 
