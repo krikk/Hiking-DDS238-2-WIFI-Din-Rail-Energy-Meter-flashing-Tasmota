@@ -24,9 +24,9 @@ Tasmota Config for TuyaMCU to paste into Console:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19;
 ```
-Tasmota Config : Publishing TuyaReceived to MQTT; Show Voltage with 1 Decimal
+Tasmota Config : Publishing TuyaReceived to MQTT; Show Voltage/Power with 1 Decimal
 ```console
-Backlog SetOption66 1; VoltRes 1;
+Backlog SetOption66 1; VoltRes 1; WattRes 1;
 ```
 Rule to update Data on boot and every 5 seconds afterwards...
 ```console
