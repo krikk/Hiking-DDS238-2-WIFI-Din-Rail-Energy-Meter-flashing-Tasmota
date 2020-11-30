@@ -38,7 +38,7 @@ Rule2
   ON TuyaReceived#DpType2Id101 DO Backlog var1 %value%; MULT1 0.01; event sendTotalkWh ENDON
   ON event#sendTotalkWh DO publish tele/SmartEnergyMeter/TotalkWh %var1% ENDON
 ```
-Activate Rule1
+Activate Rule1 and Rule2
 ```console
 Backlog Rule1 1; Rule2 1;
 ```
