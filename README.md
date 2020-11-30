@@ -32,9 +32,15 @@ Rule to update Data on boot and every 5 seconds afterwards...
 ```console
 Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
 ```
+Rule to publish TotalkWh value and correct the value
+```console
+Rule2
+  ON TuyaReceived#DpType2Id101 DO Backlog var1 %value%; MULT1 0.01; event sendTotalkWh ENDON
+  ON event#sendTotalkWh DO publish tele/SmartEnergyMeter/TotalkWh %var1% ENDON
+```
 Activate Rule1
 ```console
-Rule1 1;
+Backlog Rule1 1; Rule2 1;
 ```
 More pictures from the inside:
 <p align="center"> <img src="pictures/sideview.jpg" width="300" > <img src="pictures/open_side.jpg" width="300" ></p>
