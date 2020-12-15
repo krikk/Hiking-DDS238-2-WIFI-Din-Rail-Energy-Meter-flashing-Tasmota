@@ -14,7 +14,7 @@ after desoldering the ESP-Board, the flashing was easy, soldering together was n
 my board after putting it together:
 <p align="center"> <img src="pictures/displayboard_back_with_espboard_side_after.jpg" width="300" ></p>
 
-After flashing via USB-to-Serial adapter, only the software part is left to do. After basic Wifi Setup of Tasmota apply this Template:
+After flashing via USB-to-Serial adapter, only the software part is left to do. After basic Wifi Setup of Tasmota (i did use 9.1.0.2) apply this Template:
 
 Tasmota Version > 9.1 Template
 ```console
