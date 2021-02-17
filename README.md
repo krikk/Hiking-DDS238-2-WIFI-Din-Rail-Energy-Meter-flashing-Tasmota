@@ -20,6 +20,9 @@ Tasmota Version > 9.1 Template
 ```console
 {"NAME":"Hiking DDS238-2 WIFI","GPIO":[0,2272,0,2304,0,0,0,0,0,0,320,0,32,0],"FLAG":0,"BASE":54}
 ```
+should look like that after applying this template:
+<p align="center"> <img src="pictures/tasmota_module_config.png" width="300" ></p>
+
 Tasmota Config for TuyaMCU to paste into Console:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19;
