@@ -27,6 +27,8 @@ Tasmota Config for TuyaMCU to paste into Console:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; TuyaMCU 37,101;
 ```
+* *dpId=9 seem to be a timer to toggle the device relay, set it to any value and it starts counting down, by the time it reaches 0 the relay toggles state. As far as I know, this can't be used in Tasmota* *
+
 Tasmota Config : Set reference for total energy to internal counter; Publishing TuyaReceived to MQTT; Show Voltage/Power with 1 Decimal
 ```console
 Backlog SetOption72 1; SetOption66 1; VoltRes 1; WattRes 1;
