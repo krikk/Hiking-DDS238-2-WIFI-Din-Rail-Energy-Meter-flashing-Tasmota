@@ -27,7 +27,7 @@ Tasmota Config for TuyaMCU to paste into Console:
 ```console
 Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; TuyaMCU 37,101;
 ```
-Tasmota Config : Publishing TuyaReceived to MQTT; Show Voltage/Power with 1 Decimal
+Tasmota Config : Set reference for total energy to internal counter; Publishing TuyaReceived to MQTT; Show Voltage/Power with 1 Decimal
 ```console
 Backlog SetOption72 1; SetOption66 1; VoltRes 1; WattRes 1;
 ```
@@ -36,12 +36,13 @@ Rule to update Data on boot and every 5 seconds afterwards...
 Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
 ```
 Rule to publish TotalkWh value and correct the value (no longer needed starting with Tasmota Firmware >= 9.5.0)
-```console
+```console~~
 Rule2
   ON TuyaReceived#DpType2Id101 DO Backlog var1 %value%; MULT1 0.01; event sendTotalkWh ENDON
   ON event#sendTotalkWh DO publish tele/SmartEnergyMeter/TotalkWh %var1% ENDON
 ```
-Activate Rule1 and Rule2
+
+Activate Rule1 and Rule2 (Rule 2 is no longer needed starting with Tasmota Firmware >= 9.5.0)
 ```console
 Backlog Rule1 1; Rule2 1;
 ```
