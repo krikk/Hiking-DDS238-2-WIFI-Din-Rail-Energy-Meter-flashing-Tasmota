@@ -25,17 +25,17 @@ should look like that after applying this template:
 
 Tasmota Config for TuyaMCU to paste into Console:
 ```console
-Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19;
+Backlog TuyaMCU 33,20; TuyaMCU 32,18; TuyaMCU 31,19; TuyaMCU 37,101;
 ```
 Tasmota Config : Publishing TuyaReceived to MQTT; Show Voltage/Power with 1 Decimal
 ```console
-Backlog SetOption66 1; VoltRes 1; WattRes 1;
+Backlog SetOption72 1; SetOption66 1; VoltRes 1; WattRes 1;
 ```
 Rule to update Data on boot and every 5 seconds afterwards...
 ```console
 Rule1 on System#Boot do RuleTimer1 5 endon on Rules#Timer=1 do backlog TuyaSend8; RuleTimer1 5 endon
 ```
-Rule to publish TotalkWh value and correct the value
+Rule to publish TotalkWh value and correct the value (no longer needed starting with Tasmota Firmware >= 9.5.0)
 ```console
 Rule2
   ON TuyaReceived#DpType2Id101 DO Backlog var1 %value%; MULT1 0.01; event sendTotalkWh ENDON
