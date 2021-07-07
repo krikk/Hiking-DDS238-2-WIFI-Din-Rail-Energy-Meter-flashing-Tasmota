@@ -8,6 +8,7 @@ First try was with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert
 
 Picture of the TYWE3S Board on the left side, Board with the MCU on the right side:
 <p align="center"> <img src="pictures/displayboard_back_with_espboard.jpg" width="300" > <img src="pictures/displayboard_back_without_espboard.jpg" width="300" ></p>
+
 ~~because the RX/TX of the ESP8266 is connected to the MCU under it, i had to desolder the ESP-Board to be able to flash it~~, `the needed pin layout can be found here: https://tasmota.github.io/docs/devices/TYWE3S/
 
 according to user @chaveiro it should be possible to flash without soldering, see the pinout here: https://user-images.githubusercontent.com/4527135/124747294-b04dd780-df19-11eb-962f-7e01ce873563.png
