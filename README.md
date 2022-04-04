@@ -13,6 +13,20 @@ Picture of the TYWE3S Board on the left side, Board with the MCU on the right si
 
 according to user @chaveiro it should be possible to flash without soldering, see the pinout here: https://user-images.githubusercontent.com/4527135/124747294-b04dd780-df19-11eb-962f-7e01ce873563.png
 
+### Backup original Firmware:
+Save bakup of original firmware:
+```console
+python esptool.py --port COM15 --baud 115200 read_flash 0x00000 0x100000 backup1.img
+```
+
+Restore original firmware:
+```console
+python esptool.py --port COM15 --baud 234000 write_flash -fm qio -fs 1MB 0x00000 backup1.img
+```
+
+### Flashing Tasmota
+use https://github.com/tasmota/tasmotizer
+
 ~~after desoldering the ESP-Board~~, the flashing was easy, soldering together was not so easy, because the ESP-Board does have smaller holes (standard 2.54 are to big)
 my board after putting it together:
 <p align="center"> <img src="pictures/displayboard_back_with_espboard_side_after.jpg" width="300" ></p>
