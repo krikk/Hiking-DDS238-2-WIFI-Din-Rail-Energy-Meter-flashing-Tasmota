@@ -1,6 +1,9 @@
 # Hiking-DDS238-2-WIFI-Din-Rail-Energy-Meter-flashing-Tasmota
 
 How to flash the [Hiking DDS238-2 WIFI Din Rail Energy Meter](https://www.aliexpress.com/item/4000571797301.html) with Tasmota...
+
+<b>Update 2023-05-17: User reported that new Hiking-DDS238-2-WIFI comes with the WR3 Chip instead of the TYWE3S, so this will not work with that chip!!</b>
+
 <p align="center"> <img src="pictures/front.jpg" width="300" title="hover text"><img src="pictures/back.jpg" width="300" title="hover text"></p>
 
 First try was with [tuya-convert](https://github.com/ct-Open-Source/tuya-convert) but this did not work (seems to be newer Firmware) i had to open the device, with the 2 screws on the backside, after that you can remove the cover and access the lcd-board and on the backside of the LCD-board you will find the TYWE3S Board (aka ESP8266EX)
